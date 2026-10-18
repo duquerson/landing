@@ -34,6 +34,7 @@ Thumbs.db
 
 # Vercel & Deploy
 .vercel/
+.netlify/
 
 # TypeScript
 *.tsbuildinfo

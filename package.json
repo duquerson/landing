@@ -12,6 +12,7 @@
     "build": "pnpm build.client && pnpm build.preview",
     "build.client": "vite build",
     "build.preview": "vite build --ssr src/entry.preview.tsx",
+    "build.netlify": "pnpm build.client && vite build --config adapters/netlify-edge/vite.config.ts",
     "build.types": "tsc --noEmit",
     "preview": "pnpm build && vite preview",
     "lint": "tsc --noEmit",

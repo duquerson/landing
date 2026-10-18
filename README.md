@@ -26,15 +26,14 @@ pnpm dev
 
 Variables de entorno: copia `.env.example` a `.env` y rellena los valores. **Nunca subas `.env` al repositorio**; las claves solo se usan en el servidor.
 
-Claves que todavía no se consumen en el código actual:
+Variables de entorno usadas por el endpoint de contacto:
 
 | Variable | Para qué sirve |
 | --- | --- |
-| `RESEND_API_KEY` | Envío de emails del formulario de contacto (Resend) |
-| `CONTACT_TO_EMAIL` | Destino del formulario de contacto |
-| `RESEND_FROM` | Remitente verificado en Resend |
-| `UPSTASH_REDIS_REST_URL` / `UPSTASH_REDIS_REST_TOKEN` | Rate limit distribuido opcional (Upstash Redis REST) |
-| `CV_DOWNLOAD_SECRET` | Firma de URLs temporales de descarga del CV (mínimo 16 caracteres) |
+| `TELEGRAM_BOT_TOKEN` | Token privado del bot que recibe los mensajes |
+| `TELEGRAM_CHAT_ID` | ID del chat de destino |
+
+En desarrollo local, define estos valores en `.env`. En producción, configúralos en Netlify como variables de entorno privadas; no los añadas al repositorio.
 
 ## Comandos
 
@@ -46,6 +45,18 @@ pnpm lint     # chequeo de tipos (tsc --noEmit; no hay ESLint)
 pnpm test     # tests con node --test
 pnpm fmt      # Prettier
 ```
+
+## Despliegue en Netlify
+
+El sitio usa Qwik City con Netlify Edge para servir páginas SSR y el endpoint `POST /contact`. La configuración está en `netlify.toml`: Netlify ejecuta `pnpm build.netlify` y publica los recursos estáticos generados en `dist`.
+
+1. Sube esta rama a GitHub y, en Netlify, selecciona **Add new site → Import an existing project**.
+2. Conecta GitHub, elige `duquerson/landing` y selecciona la rama `master`.
+3. Netlify leerá el comando de build y el directorio de publicación de `netlify.toml`.
+4. En **Site configuration → Environment variables**, crea `TELEGRAM_BOT_TOKEN` y `TELEGRAM_CHAT_ID` con los valores reales. No los pegues en el repo, en `netlify.toml` ni en logs.
+5. Inicia el deploy desde Netlify y revisa el resultado en el log de build.
+
+La configuración del código no crea ni vincula un sitio en una cuenta Netlify. El primer deploy requiere acceso a la cuenta del propietario y establecer allí las variables privadas.
 
 ## Estructura
 

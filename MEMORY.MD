@@ -29,6 +29,7 @@ Memoria del proyecto entre sesiones. Máximo ~50 líneas: resume o elimina lo qu
 - El CSS de órbita no depende del render de Qwik: `prefers-reduced-motion: reduce` aplica `animation-duration: 0.01ms !important` y `animation-iteration-count: 1 !important`, y las utilidades `motion-reduce` cancelan los giros y el cambio de escala. Chromium local confirmó que el handler añade la clase de giro, pero el estilo computado es `animation-name: none`; distinguir esto de un handler que no se ejecuta.
 - La pausa por navegación usa `:focus-visible`, mantiene su estado separado de la pausa manual y solo se libera al salir del foco de la escena. No es un detector de lector de pantalla: el foco virtual de navegación puede no emitir eventos de foco DOM. Con `prefers-reduced-motion: reduce`, el sistema sigue desactivando las animaciones.
 - La convención Better Commits usa `<gitmoji> <tipo>(<scope>): <asunto>` con tipos Conventional Commits, asuntos en español y sin automatización; no se deben crear commits iniciales implícitos cuando el historial esté vacío.
+- El despliegue usa `@builder.io/qwik-city` Netlify Edge ya instalado; `pnpm build.netlify` compila cliente y SSR a `dist/` y `.netlify/edge-functions/`. La build Edge requiere `rollupOptions.input` como arreglo (qwik-speak 0.24) y `outDir` explícito (el adaptador localiza `edge-functions` en el path). Netlify usa `netlify.toml`; el formulario necesita `TELEGRAM_BOT_TOKEN` y `TELEGRAM_CHAT_ID` como variables privadas. El build y lint pasan; no se ha publicado en una cuenta Netlify.
 - Áreas táctiles mínimas de 44×44px en botón de navegación y enlaces interactivos para cumplir WCAG 2.5.8.
 - Idioma automático, sin selector: español si el navegador está en español y inglés en el resto.
 - `features/contact-form/` es la única feature. El schema Zod vive una sola vez en `model/schema.ts` y lo usan el componente y el endpoint.
@@ -43,9 +44,9 @@ Memoria del proyecto entre sesiones. Máximo ~50 líneas: resume o elimina lo qu
 - En este entorno, `node` es v24.18.0, pero `pnpm` resuelve `C:\ProgramData\chocolatey\bin\pnpm.exe` (advierte Node 20.11.1); el wrapper Corepack asociado a Node es `C:\Program Files\nodejs\pnpm.CMD`.
 - `pnpm build` puede fallar con `spawn EPERM` al iniciar esbuild desde Vite incluso usando Node 24; `pnpm lint` se ejecuta correctamente con el wrapper y PATH de Node 24.
 - Las carpetas ocultas presentes en la raíz (`.agents`, `.antigravitycli`, `.claude`, `.opencode`, `.vscode`, `.windsurf`) están excluidas explícitamente en `.gitignore`.
-- El repo local se inicializó en esta sesión, pero el sandbox no permite escribir en `.git` (`git add` falla al crear `index.lock`); los commits deben ejecutarse desde una terminal con acceso de escritura.
+- El remoto puede contener una historia divergente; antes de reemplazar `master`, usar `--force-with-lease` con el SHA recién inspeccionado para no borrar cambios concurrentes. La sincronización requiere permiso de push en GitHub.
 - No reintroducir restos del stack anterior (Astro/Vue/GSAP) ni Vitest/Playwright. El runner de tests es `pnpm test` (`node --test`).
 
 ## Pendiente
-- Adaptador de despliegue para Netlify: configurar bundle para Netlify Functions / Edge.
+- Configurar el sitio y las variables privadas en la cuenta Netlify y ejecutar el primer deploy.
 - Rate limit opcional y descarga de CV firmada si aplica.
