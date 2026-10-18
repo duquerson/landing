@@ -1,6 +1,6 @@
 # Spec 013 — Despliegue SSR en Netlify Edge
 
-**Estado: aprobada; validación local completa, sincronización remota pendiente**
+**Estado: implementada y verificada**
 
 ## Por qué
 
