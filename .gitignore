@@ -1,0 +1,54 @@
+# Build
+.astro/
+dist/
+server/
+qwik-speak-inline.log
+
+# Node & Dependencies
+node_modules/
+.npm/
+.pnpm-store/
+pnpm-debug.log*
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment & Secrets
+.env
+.env.*
+!.env.example
+
+# Tests & Coverage
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+coverage/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Vercel & Deploy
+.vercel/
+
+# TypeScript
+*.tsbuildinfo
+
+# Hidden directories for agents and editors
+/.agents/
+/.antigravitycli/
+/.claude/
+/.opencode/
+/.vscode/
+/.windsurf/
+/.continue/
+/.commandcode/
+
+# Project Meta
+skills-lock.json
+*-backup.*
+*.bak

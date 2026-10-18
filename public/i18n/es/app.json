@@ -1,0 +1,137 @@
+{
+  "a11y": {
+    "skip": "Saltar al contenido principal",
+    "menu": "Abrir menú de navegación",
+    "close_menu": "Cerrar menú de navegación",
+    "external_link": "se abre en una nueva pestaña"
+  },
+  "hero": {
+    "badge": "Desarrollador Full Stack",
+    "title": "Interfaces web que se sienten simples. Código que funciona.",
+    "description": "Soy Yeferson Soto (Duquerson). Creo experiencias web rápidas, responsivas y accesibles.",
+    "cta_projects": "Ver proyectos",
+    "cta_contact": "Contactar",
+    "avatar_alt": "Yeferson Soto Duque, desarrollador full stack",
+    "scene_label": "Retrato y tecnologías utilizadas",
+    "pause_animation": "Pausar animación de tecnologías",
+    "resume_animation": "Reanudar animación de tecnologías"
+  },
+  "navbar": {
+    "aria_label": "Navegación principal",
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "experience": "Experiencia",
+    "skills": "Habilidades",
+    "contact": "Contacto"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "p1": "Tecnico en informática especializado en desarrollo frontend con JavaScript, HTML y CSS. Mi objetivo es simple: hacerte ahorrar tiempo. Me especializo en construir sitios y aplicaciones web estructurados, limpios y optimizados para que tu negocio funcione sin complicaciones. Creo en el código ordenado, las entregas a tiempo y las soluciones que de verdad hacen crecer tu proyecto. 🛠️ ¿Tienes una idea o necesitas optimizar tu presencia web? Hablemos y hagámoslo realidad."
+  },
+  "projects": {
+    "title": "Proyectos Destacados",
+    "subtitle": "Una selección de mis trabajos y proyectos de código abierto",
+    "demo": "Ver demo",
+    "repo": "Ver en GitHub",
+    "items": {
+      "p1": {
+        "title": "Game Learning",
+        "description": "Plataforma interactiva para aprender JavaScript con lecciones por niveles, ejercicios y evaluaciones. Desarrollada con Astro, Vue y TypeScript, incluye diseño adaptable, navegación por teclado y pruebas con Vitest y Playwright.",
+        "tags": "Astro,Vue 3,TypeScript,Pinia,Supabase,Tailwind CSS,Vitest,Playwright",
+        "preview_alt": "Vista previa de Game Learning, plataforma para aprender JavaScript"
+      },
+      "p2": {
+        "title": "REST Countries — Where in the world?",
+        "description": "Aplicación para explorar países, buscarlos y filtrarlos por región, con páginas de detalle y modo claro/oscuro. Desarrollada con Svelte y TypeScript, integra una API REST y aplica validación de datos, caché y pruebas.",
+        "tags": "Svelte,TypeScript,Tailwind CSS,API REST,Zod,Vitest,Playwright",
+        "preview_alt": "Vista previa de REST Countries, buscador de países con filtros por región"
+      },
+      "p3": {
+        "title": "Todo App",
+        "description": "Aplicación de tareas con filtros, edición, eliminación, tema claro/oscuro y reordenamiento. Desarrollada con React y TypeScript, es una buena muestra de construcción de interfaces interactivas.",
+        "tags": "React,TypeScript,Vite,Tailwind CSS,Zod,dnd-kit,localStorage",
+        "preview_alt": "Vista previa de Todo App, aplicación de tareas con filtros y temas claro y oscuro"
+      }
+    }
+  },
+  "experience": {
+    "title": "Experiencia en desarrollo de software",
+    "subtitle": "Desarrollo independiente basado en proyectos personales.",
+    "present": "Actualidad",
+    "items": {
+      "e1": {
+        "role": "Desarrollador Frontend independiente",
+        "company": "Proyectos personales",
+        "start": "2025-09-01T12:00:00.000Z",
+        "description": "Desarrolle proyectos web personales para aplicar y fortalecer mis conocimientos de frontend. He creado interfaces adaptables y aplicaciones con React, Astro, Vue, JavaScript y TypeScript, incluyendo una plataforma interactiva para aprender JavaScript, un buscador de países conectado a una API y una aplicación de tareas. En estos proyectos también he trabajado con accesibilidad, pruebas y código mantenible."
+      }
+    }
+  },
+  "education": {
+    "title": "Formación",
+    "items": {
+      "e1": {
+        "title": "Técnico Superior Universitario en Informática",
+        "institution": "Instituto Universitario de la Frontera (IUFRONT)",
+        "start": "2008-01-01T12:00:00.000Z",
+        "end": "2012-01-01T12:00:00.000Z",
+        "description": "Formación en tecnología informática y sistemas computacionales."
+      }
+    }
+  },
+  "skills": {
+    "title": "Habilidades Técnicas",
+    "subtitle": "Tecnologías y prácticas aplicadas en mis proyectos de desarrollo web.",
+    "categories": {
+      "c1": {
+        "name": "Lenguajes y frameworks",
+        "skills": "HTML5,CSS3,JavaScript,TypeScript,Qwik,React,Astro,Vue 3"
+      },
+      "c2": {
+        "name": "Interfaces y diseño adaptable",
+        "skills": "Tailwind CSS,Flexbox,CSS Grid,Enfoque mobile-first,HTML semántico,Navegación por teclado,ARIA,Movimiento reducido"
+      },
+      "c3": {
+        "name": "Desarrollo y calidad",
+        "skills": "APIs REST,SSR,Zod,Arquitectura por capas,Código mantenible,Reutilización de lógica,Pruebas con node:test,Netlify"
+      }
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "¿Tienes una propuesta o quieres colaborar? Envíame un mensaje.",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "message": "Mensaje",
+    "send": "Enviar mensaje",
+    "sending": "Enviando…",
+    "success": "¡Mensaje enviado con éxito!",
+    "error": "No se pudo conectar para enviar tu mensaje. Inténtalo de nuevo en unos minutos.",
+    "placeholders": {
+      "name": "Ada Lovelace…",
+      "email": "ada@example.com…",
+      "message": "Cuéntame en dos o tres líneas qué necesitas…"
+    },
+    "errors": {
+      "name": {
+        "min": "El nombre necesita al menos 2 caracteres.",
+        "required": "El nombre es obligatorio.",
+        "generic": "Revisa el nombre."
+      },
+      "email": {
+        "format": "Escribe un correo electrónico válido.",
+        "required": "El correo electrónico es obligatorio.",
+        "generic": "Revisa el correo electrónico."
+      },
+      "message": {
+        "min": "El mensaje necesita al menos 10 caracteres.",
+        "required": "El mensaje es obligatorio.",
+        "generic": "Revisa el mensaje."
+      }
+    }
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "built_with": "Construido con Qwik v1, Tailwind CSS v4 y TypeScript."
+  }
+}

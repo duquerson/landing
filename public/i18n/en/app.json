@@ -1,0 +1,137 @@
+{
+  "a11y": {
+    "skip": "Skip to main content",
+    "menu": "Open navigation menu",
+    "close_menu": "Close navigation menu",
+    "external_link": "opens in a new tab"
+  },
+  "hero": {
+    "badge": "Junior Full Stack Developer",
+    "title": "Building modern, accessible web experiences",
+    "description": "Hi, I'm Yeferson Soto Duque (duquerson). I specialize in building robust software with a strong focus on accessibility (WCAG 2.2 AA), performance, and maintainable code.",
+    "cta_projects": "View projects",
+    "cta_contact": "Contact me",
+    "avatar_alt": "Yeferson Soto Duque, full stack developer",
+    "scene_label": "Portrait and technologies used",
+    "pause_animation": "Pause technology animation",
+    "resume_animation": "Resume technology animation"
+  },
+  "navbar": {
+    "aria_label": "Main navigation",
+    "about": "About",
+    "projects": "Projects",
+    "experience": "Experience",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "about": {
+    "title": "About Me",
+    "p1": "IT technician specialized in frontend development with JavaScript, HTML, and CSS. My goal is simple: save you time. I specialize in building structured, clean, and optimized websites and web applications so your business runs without complications. I believe in organized code, on-time deliveries, and solutions that truly make your project grow. 🛠️ Do you have an idea or need to optimize your web presence? Let's talk and make it happen."
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "A selection of my work and open source projects",
+    "demo": "View demo",
+    "repo": "View on GitHub",
+    "items": {
+      "p1": {
+        "title": "Game Learning",
+        "description": "Interactive platform for learning JavaScript through level-based lessons, exercises, and assessments. Built with Astro, Vue, and TypeScript, it includes responsive design, keyboard navigation, and Vitest and Playwright tests.",
+        "tags": "Astro,Vue 3,TypeScript,Pinia,Supabase,Tailwind CSS,Vitest,Playwright",
+        "preview_alt": "Game Learning preview, a platform for learning JavaScript"
+      },
+      "p2": {
+        "title": "REST Countries — Where in the world?",
+        "description": "Application for exploring, searching, and filtering countries by region, with detail pages and light/dark mode. Built with Svelte and TypeScript, it integrates a REST API and applies data validation, caching, and tests.",
+        "tags": "Svelte,TypeScript,Tailwind CSS,REST API,Zod,Vitest,Playwright",
+        "preview_alt": "REST Countries preview, a country search app with regional filters"
+      },
+      "p3": {
+        "title": "Todo App",
+        "description": "Task application with filtering, editing, deletion, light/dark mode, and reordering. Built with React and TypeScript, it demonstrates interactive interface development.",
+        "tags": "React,TypeScript,Vite,Tailwind CSS,Zod,dnd-kit,localStorage",
+        "preview_alt": "Todo App preview, a task manager with filters and light and dark themes"
+      }
+    }
+  },
+  "experience": {
+    "title": "Software Development Experience",
+    "subtitle": "Independent work based on personal projects.",
+    "present": "Present",
+    "items": {
+      "e1": {
+        "role": "Independent Frontend Developer",
+        "company": "Personal projects",
+        "start": "2025-09-01T12:00:00.000Z",
+        "description": "I build personal web projects to apply and strengthen my frontend skills. I have created responsive interfaces and applications with React, Astro, Vue, JavaScript, and TypeScript, including an interactive platform for learning JavaScript, a country search connected to an API, and a task app. These projects have also involved accessibility, testing, and maintainable code."
+      }
+    }
+  },
+  "education": {
+    "title": "Education",
+    "items": {
+      "e1": {
+        "title": "Higher University Technician in Computer Science",
+        "institution": "Instituto Universitario de la Frontera (IUFRONT)",
+        "start": "2008-01-01T12:00:00.000Z",
+        "end": "2012-01-01T12:00:00.000Z",
+        "description": "Education in information technology and computer systems."
+      }
+    }
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "subtitle": "Technologies and practices applied in my web development projects.",
+    "categories": {
+      "c1": {
+        "name": "Languages & Frameworks",
+        "skills": "HTML5,CSS3,JavaScript,TypeScript,Qwik,React,Astro,Vue 3"
+      },
+      "c2": {
+        "name": "Interfaces & Responsive Design",
+        "skills": "Tailwind CSS,Flexbox,CSS Grid,Mobile-first,Semantic HTML,Keyboard navigation,ARIA,Reduced motion"
+      },
+      "c3": {
+        "name": "Development & Quality",
+        "skills": "REST APIs,SSR,Zod,Layered architecture,Maintainable code,Logic reuse,Testing with node:test,Netlify"
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Have a project or want to collaborate? Send me a message.",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send message",
+    "sending": "Sending…",
+    "success": "Message sent successfully!",
+    "error": "We couldn't connect to send your message. Please try again in a few minutes.",
+    "placeholders": {
+      "name": "Ada Lovelace…",
+      "email": "ada@example.com…",
+      "message": "Tell me in two or three lines what you need…"
+    },
+    "errors": {
+      "name": {
+        "min": "The name needs at least 2 characters.",
+        "required": "The name is required.",
+        "generic": "Check the name."
+      },
+      "email": {
+        "format": "Enter a valid email address.",
+        "required": "The email address is required.",
+        "generic": "Check the email address."
+      },
+      "message": {
+        "min": "The message needs at least 10 characters.",
+        "required": "The message is required.",
+        "generic": "Check the message."
+      }
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "built_with": "Built with Qwik v1, Tailwind CSS v4, and TypeScript."
+  }
+}
