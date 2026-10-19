@@ -1,7 +1,7 @@
 # Build
 .astro/
 dist/
-server/
+/server/
 qwik-speak-inline.log
 
 # Node & Dependencies
