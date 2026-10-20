@@ -43,7 +43,7 @@
       "p2": {
         "title": "REST Countries — Where in the world?",
         "description": "Application for exploring, searching, and filtering countries by region, with detail pages and light/dark mode. Built with Svelte and TypeScript, it integrates a REST API and applies data validation, caching, and tests.",
-        "tags": "Svelte,TypeScript,Tailwind CSS,REST API,Zod,Vitest,Playwright",
+        "tags": "Astro,Vue,TypeScript,Tailwind CSS,REST API,Zod,Vitest,Playwright",
         "preview_alt": "REST Countries preview, a country search app with regional filters"
       },
       "p3": {
