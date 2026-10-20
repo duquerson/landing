@@ -43,7 +43,7 @@
       "p2": {
         "title": "REST Countries — Where in the world?",
         "description": "Aplicación para explorar países, buscarlos y filtrarlos por región, con páginas de detalle y modo claro/oscuro. Desarrollada con Svelte y TypeScript, integra una API REST y aplica validación de datos, caché y pruebas.",
-        "tags": "Svelte,TypeScript,Tailwind CSS,API REST,Zod,Vitest,Playwright",
+        "tags": "Astro, Vue,TypeScript,Tailwind CSS,API REST,Zod,Vitest,Playwright",
         "preview_alt": "Vista previa de REST Countries, buscador de países con filtros por región"
       },
       "p3": {
