@@ -32,7 +32,7 @@ export const Projects = component$(() => {
 			imageAlt: t("projects.items.p2.preview_alt"),
 			imageWidth: 1440,
 			imageHeight: 900,
-			demo: "https://country-api-eight-wheat.vercel.app",
+			demo: "https://country-api-eight-wheat.vercel.app/",
 			repo: "https://github.com/duquerson/country_api"
 		},
 		{
